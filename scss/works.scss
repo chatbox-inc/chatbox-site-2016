@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+
+@import "./common.scss";
+
+@include category_bg(works);
+
+#projects {
+	
+	padding: 3em 0 5em;
+	background: $clr-gray;
+	
+	h1 {
+		@include heading-CR;
+	}
+	
+	.project {
+		margin-top: 1em;
+		border: 3px solid $clr-red;
+		padding: 2em;
+		
+		.thumb {
+			text-align: center;
+			padding: 1.5em;
+			background: #fff;
+			
+			h2 {
+				color: $clr-red;
+				font-size: 1.2em;
+			}
+		}
+		
+		p {
+				padding-top: 1em; 
+				color: $clr-red;
+			}
+		
+	}
+}
+
+#why {
+	padding: 4em 0 8em;
+	background: $clr-red;
+	
+	.heading {
+		h1 {
+			@include heading-CR;
+			color: #fff;
+		}
+		
+		p {
+			text-align: center;
+			color: #fff;
+		}
+	}
+		
+	.reason {
+		margin-bottom: 0.5em;
+		
+		.thumb {
+			width: 100px;
+			height: 100px;
+			background: #fff;
+			border-radius: 50%;
+			text-align: center;
+			position: relative;
+		
+			img {
+				display: block;
+				position: absolute;
+				top: 25%;
+				left: 25%;
+			}
+		}
+		
+	}
+	
+	
+}
+

@@ -1,0 +1,50 @@
+extends ./_layout.jade
+
+block contents
+    #main
+      .container
+        .contents
+          #corporate.content
+            .heading
+              h1 会社概要
+              p.lead 株式会社chatboxは、大阪のWeb制作会社です。
+            .profile.row
+              dl
+                dt.col-sm-2 会社名称
+                dd.col-sm-10 株式会社 chatbox（チャットボックス）
+              dl
+                dt.col-sm-2 設立
+                dd.col-sm-10 平成26年 10月 01日
+              dl
+                dt.col-sm-2 代表
+                dd.col-sm-10 後藤知宏
+              dl
+                dt.col-sm-2 所在地
+                dd.col-sm-10 541-0048　大阪市中央区瓦町3-2-10 エスティメゾン瓦町 805
+              dl
+                dt.col-sm-2 資本金
+                dd.col-sm-10 30万円
+          #access.content
+            .heading
+              h1 アクセス
+            .map
+              img(src='http://placehold.it/940x400/ccc/fff/&text=googlemap', alt='')
+            .detail.row
+              .exterior.col-sm-4
+                img(src='http://placehold.it/300x250/ccc/fff/&text=exterior', alt='')
+              .info.col-sm-8
+                dl
+                  dt.map 住所
+                  dd 541-0048　大阪市中央区瓦町3-2-10 エスティメゾン瓦町 805
+                  dd インターホンがあるので「805」を呼び出して下さい。
+                dl
+                  dt.train 最寄駅
+                  dd
+                    | 御堂筋線　
+                    span.bold 「本町」
+                    | 　1号出口より　徒歩4分
+                  dd
+                    | 御堂筋線　
+                    span.bold 「淀屋橋」
+                    | 11号出口より　徒歩6分
+    // main
